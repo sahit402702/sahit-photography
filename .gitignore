@@ -1,0 +1,36 @@
+# Node
+node_modules/
+
+# Next.js build
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.DS_Store
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+
+# Static exports / caches
+.cache/
+parcel-cache/
+
+# OS files
+Thumbs.db
+
+# Vercel
+.vercel/
+
+# Optional: lockfile (committing is recommended for reproducible builds)
+# package-lock.json
