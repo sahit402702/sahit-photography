@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "welcome",
+    "title": "Welcome to the Blog",
+    "content": "Your first blog post — stored in JSON!"
+  },
+  {
+    "slug": "getting-started",
+    "title": "Getting Started",
+    "content": "This site uses static JSON data — no database or CMS required."
+  }
+]
