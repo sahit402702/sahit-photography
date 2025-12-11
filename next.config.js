@@ -10,7 +10,9 @@ const nextConfig = {
         port: '',
         pathname: '/**'
       }
-    ]
+    ],
+    // serve remote images directly (useful for static export or non-Vercel hosts)
+    unoptimized: true
   }
 };
 module.exports = nextConfig;
