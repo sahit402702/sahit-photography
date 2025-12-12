@@ -27,7 +27,7 @@ export default function Header() {
           className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity"
         >
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="Brand logo"
             className="logo-mark"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/assets/st_logo.png'; }}
