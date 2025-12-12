@@ -7,10 +7,37 @@ interface GalleryGridClientProps {
   initialImages: string[];
 }
 
+interface ImageDimensions {
+  [key: string]: { width: number; height: number } | null;
+}
+
 export default function GalleryGridClient({ initialImages }: GalleryGridClientProps) {
   const [open, setOpen] = useState<number | null>(null);
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
+  const [imageDimensions, setImageDimensions] = useState<ImageDimensions>({});
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // Load image dimensions to detect portrait/landscape
+  useEffect(() => {
+    const loadImageDimensions = async () => {
+      const dimensions: ImageDimensions = {};
+      
+      for (const src of initialImages) {
+        const img = new window.Image();
+        img.onload = () => {
+          dimensions[src] = { width: img.width, height: img.height };
+          setImageDimensions({ ...dimensions });
+        };
+        img.onerror = () => {
+          dimensions[src] = null;
+          setImageDimensions({ ...dimensions });
+        };
+        img.src = src;
+      }
+    };
+
+    loadImageDimensions();
+  }, [initialImages]);
 
   // Intersection Observer for fade-in effect
   useEffect(() => {
@@ -52,6 +79,13 @@ export default function GalleryGridClient({ initialImages }: GalleryGridClientPr
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [open, initialImages.length]);
 
+  // Determine if image is portrait or landscape
+  const isPortrait = (src: string) => {
+    const dims = imageDimensions[src];
+    if (!dims) return false;
+    return dims.height > dims.width;
+  };
+
   if (initialImages.length === 0) {
     return (
       <div className="text-center py-16">
@@ -66,7 +100,7 @@ export default function GalleryGridClient({ initialImages }: GalleryGridClientPr
       <div className="gallery-grid">
         {initialImages.map((src, i) => {
           const isVisible = visibleItems.has(i);
-          const isSpan = i % 3 === 0;
+          const portrait = isPortrait(src);
 
           return (
             <div
@@ -75,14 +109,14 @@ export default function GalleryGridClient({ initialImages }: GalleryGridClientPr
                 itemRefs.current[i] = el;
               }}
               className={`gallery-item cursor-pointer relative overflow-hidden rounded-lg ${
-                isSpan ? 'gallery-item--span2' : ''
+                portrait ? 'gallery-item--portrait' : 'gallery-item--landscape'
               } ${isVisible ? 'fade-in-up' : 'observe-fade'}`}
               onClick={() => setOpen(i)}
               role="button"
               tabIndex={0}
               aria-label={`Open image ${i + 1} in lightbox`}
             >
-              <div className="relative w-full h-[220px] md:h-[260px]">
+              <div className={`relative w-full ${portrait ? 'h-[340px] md:h-[380px]' : 'h-[220px] md:h-[260px]'}`}>
                 <Image
                   src={src}
                   alt={`Professional photography by Sahit Tirunagari - Gallery image ${i + 1} featuring travel and wildlife photography`}

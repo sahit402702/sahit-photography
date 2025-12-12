@@ -166,7 +166,7 @@ html {
 
 @media (min-width: 768px) {
   .gallery-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
 }
@@ -183,6 +183,25 @@ html {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Portrait images take 1 column, landscape take 2 columns */
+.gallery-item--portrait {
+  grid-column: span 1;
+}
+
+.gallery-item--landscape {
+  grid-column: span 2;
+}
+
+@media (min-width: 768px) {
+  .gallery-item--portrait {
+    grid-column: span 1;
+  }
+
+  .gallery-item--landscape {
+    grid-column: span 2;
+  }
 }
 
 .gallery-item--span2 {
