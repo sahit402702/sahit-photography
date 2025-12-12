@@ -85,7 +85,7 @@ export default function GalleryGridClient({ initialImages }: GalleryGridClientPr
               <div className="relative w-full h-[220px] md:h-[260px]">
                 <Image
                   src={src}
-                  alt={`Gallery image ${i + 1}`}
+                  alt={`Professional photography by Sahitti Tirunagari - Gallery image ${i + 1} featuring travel and wildlife photography`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -141,7 +141,7 @@ export default function GalleryGridClient({ initialImages }: GalleryGridClientPr
             {/* Image */}
             <Image
               src={initialImages[open]}
-              alt={`Lightbox image ${open + 1}`}
+              alt={`Sahitti Tirunagari photography - Professional travel and wildlife photography image ${open + 1}`}
               width={1400}
               height={900}
               className="lightbox-image rounded-md"

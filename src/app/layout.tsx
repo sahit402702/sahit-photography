@@ -3,14 +3,107 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+const baseUrl = "https://sahittirunagari.com";
+
 export const metadata: Metadata = {
-  title: "Sahit Tirunagari — Travel & Wildlife Photography",
-  description: "Portfolio of Sahit Tirunagari — travel and wildlife photographer. Workshops, prints, and assignments worldwide."
+  metadataBase: new URL(baseUrl),
+  title: "Sahitti Tirunagari – Professional Photography Portfolio",
+  description: "Award-winning photography portfolio showcasing travel, wildlife, and creative portraits. Professional photographer specializing in landscapes and nature.",
+  keywords: [
+    "photographer",
+    "photography portfolio",
+    "travel photography",
+    "wildlife photography",
+    "professional photographer",
+    "portrait photography",
+    "landscape photography"
+  ],
+  authors: [{ name: "Sahitti Tirunagari" }],
+  creator: "Sahitti Tirunagari",
+  publisher: "Sahitti Tirunagari",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: baseUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: baseUrl,
+    siteName: "Sahitti Tirunagari Photography",
+    title: "Sahitti Tirunagari – Professional Photography Portfolio",
+    description: "Award-winning photography portfolio showcasing travel, wildlife, and creative portraits. Professional photographer specializing in landscapes and nature.",
+    images: [
+      {
+        url: `${baseUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Sahitti Tirunagari Photography Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@sahittiPhoto",
+    creator: "@sahittiPhoto",
+    title: "Sahitti Tirunagari – Professional Photography Portfolio",
+    description: "Award-winning photography portfolio showcasing travel, wildlife, and creative portraits.",
+    images: [
+      {
+        url: `${baseUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Sahitti Tirunagari Photography Portfolio",
+      },
+    ],
+  },
+  formatDetection: {
+    email: false,
+    telephone: false,
+    address: false,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Sahitti Tirunagari',
+    url: 'https://sahittirunagari.com',
+    sameAs: [
+      'https://twitter.com/sahittiPhoto',
+      'https://instagram.com/sahittiPhoto',
+    ],
+    image: 'https://sahittirunagari.com/og-image.jpg',
+    description: 'Professional photographer specializing in travel, wildlife, and creative portraits',
+    jobTitle: 'Professional Photographer',
+    email: 'hello@sahittirunagari.com',
+    knowsAbout: [
+      'Travel Photography',
+      'Wildlife Photography',
+      'Portrait Photography',
+      'Landscape Photography',
+      'Nature Photography',
+    ],
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1 w-full pt-20">
