@@ -25,7 +25,7 @@ export default function HeroParallax() {
     <section
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-[80px]"
       style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2000&auto=format&fit=crop)',
+        backgroundImage: 'url(/assets/images/manglajodi_evening.jpg)',
         backgroundAttachment: 'fixed',
         backgroundPosition: `center ${scrollY * 0.5}px`,
         backgroundSize: 'cover',
@@ -38,7 +38,7 @@ export default function HeroParallax() {
       {/* Animated background image fallback */}
       <div className="absolute inset-0 -z-20">
         <Image
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2000&auto=format&fit=crop"
+          src="/assets/images/manglajodi_evening.jpg"
           alt="Hero background"
           fill
           className="object-cover"
