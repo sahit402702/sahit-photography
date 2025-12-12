@@ -28,10 +28,10 @@ export default function HomePage() {
       {/* About Me Section */}
       <section className="section bg-black">
         <Container>
-          <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexDirection: 'row' }}>
-            {/* Left: image card (50%) */}
-            <div style={{ flex: '1 0 50%' }}>
-              <div className="rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-102" style={{ height: '100%' }}>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
+            {/* Left: image card */}
+            <div className="w-full md:w-1/2 flex-shrink-0">
+              <div className="rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105" style={{ height: '100%' }}>
                 <div className="relative" style={{ height: '100%', minHeight: '320px' }}>
                   <img
                     src="/assets/sahit.jpg"
@@ -42,9 +42,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: about text (50%) */}
-            <div style={{ flex: '1 0 50%' }}>
-              <h2 className="text-2xl font-semibold mb-4 font-handwritten">About Me</h2>
+            {/* Right: about text */}
+            <div className="w-full md:w-1/2">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-4 font-handwritten">About Me</h2>
               <p className="text-gray-400 leading-relaxed mb-4 text-sm">
                 I'm Sahit, a traveler at heart and a wildlife photographer by passion. Nature has always been my escape—a place where time slows down, light feels different, and every moment carries a story waiting to be captured.
               </p>
@@ -52,7 +52,7 @@ export default function HomePage() {
                 From early morning bird calls to chance encounters on unfamiliar trails, my camera helps me collect the little miracles I find along the way. These images are not just photographs; they're pieces of my journey and reminders of why I keep exploring.
               </p>
 
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Button href="#contact" variant="primary">
                   Book a Session
                 </Button>

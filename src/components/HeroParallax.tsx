@@ -48,14 +48,14 @@ export default function HeroParallax() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 text-center max-w-4xl px-6 md:px-12">
+      <div className="relative z-20 text-center max-w-4xl px-4 sm:px-6 md:px-12 w-full">
         <h1
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight font-handwritten"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight font-handwritten"
           style={{ opacity: 1 - scrollY / 500 }}
         >
           Sahit Tirunagari
         </h1>
-        <p className="text-lg md:text-2xl text-white mb-8 max-w-2xl mx-auto font-light drop-shadow-lg">
+        <p className="text-base sm:text-lg md:text-2xl text-white mb-8 max-w-2xl mx-auto font-light drop-shadow-lg px-2 sm:px-0">
           Professional Travel & Wildlife Photography | Capturing Nature's Untamed Beauty
         </p>
 
