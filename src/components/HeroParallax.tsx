@@ -55,7 +55,7 @@ export default function HeroParallax() {
         >
           Sahit Tirunagari
         </h1>
-        <p className="text-lg md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">
+        <p className="text-lg md:text-2xl text-white mb-8 max-w-2xl mx-auto font-light drop-shadow-lg">
           Professional Travel & Wildlife Photography | Capturing Nature's Untamed Beauty
         </p>
 
