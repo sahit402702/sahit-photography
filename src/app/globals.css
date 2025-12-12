@@ -247,7 +247,7 @@ header {
 
 /* Logo mark sizing */
 .logo-mark {
-  height: 48px;
+  height: 80px;
   width: auto;
   transition: height 0.3s ease-in-out;
 }
