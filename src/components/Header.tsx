@@ -28,11 +28,11 @@ export default function Header() {
         >
           <img
             src="/logo.png"
-            alt="Sahitti Tirunagari Photography Logo"
+            alt="Sahit Tirunagari Photography Logo"
             className="logo-mark"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/assets/st_logo.png'; }}
           />
-          <span className="brand-handwritten text-lg font-handwritten">Sahitti Tirunagari</span>
+          <span className="brand-handwritten text-lg font-handwritten">Sahit Tirunagari</span>
         </a>
 
         {/* Instagram Link */}

@@ -7,7 +7,7 @@ const baseUrl = "https://sahittirunagari.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "Sahitti Tirunagari – Professional Photography Portfolio",
+  title: "Sahit Tirunagari – Professional Photography Portfolio",
   description: "Award-winning photography portfolio showcasing travel, wildlife, and creative portraits. Professional photographer specializing in landscapes and nature.",
   keywords: [
     "photographer",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "portrait photography",
     "landscape photography"
   ],
-  authors: [{ name: "Sahitti Tirunagari" }],
-  creator: "Sahitti Tirunagari",
-  publisher: "Sahitti Tirunagari",
+  authors: [{ name: "Sahit Tirunagari" }],
+  creator: "Sahit Tirunagari",
+  publisher: "Sahit Tirunagari",
   robots: {
     index: true,
     follow: true,
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: baseUrl,
-    siteName: "Sahitti Tirunagari Photography",
-    title: "Sahitti Tirunagari – Professional Photography Portfolio",
+    siteName: "Sahit Tirunagari Photography",
+    title: "Sahit Tirunagari – Professional Photography Portfolio",
     description: "Award-winning photography portfolio showcasing travel, wildlife, and creative portraits. Professional photographer specializing in landscapes and nature.",
     images: [
       {
         url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Sahitti Tirunagari Photography Portfolio",
+        alt: "Sahit Tirunagari Photography Portfolio",
       },
     ],
   },
@@ -55,14 +55,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@sahittiPhoto",
     creator: "@sahittiPhoto",
-    title: "Sahitti Tirunagari – Professional Photography Portfolio",
+    title: "Sahit Tirunagari – Professional Photography Portfolio",
     description: "Award-winning photography portfolio showcasing travel, wildlife, and creative portraits.",
     images: [
       {
         url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Sahitti Tirunagari Photography Portfolio",
+        alt: "Sahit Tirunagari Photography Portfolio",
       },
     ],
   },
@@ -77,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Sahitti Tirunagari',
+    name: 'Sahit Tirunagari',
     url: 'https://sahittirunagari.com',
     sameAs: [
       'https://twitter.com/sahittiPhoto',

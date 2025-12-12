@@ -6,27 +6,27 @@ import Image from 'next/image';
 const FEATURED_IMAGES = [
   {
     src: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop',
-    alt: 'Serene mountain landscape by Sahitti Tirunagari - professional travel and landscape photography',
+    alt: 'Serene mountain landscape by Sahit Tirunagari - professional travel and landscape photography',
     title: 'Mountain Serenity',
   },
   {
     src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop',
-    alt: 'Golden sunset over forest by Sahitti Tirunagari - landscape photography',
+    alt: 'Golden sunset over forest by Sahit Tirunagari - landscape photography',
     title: 'Sunset Glow',
   },
   {
     src: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1600&auto=format&fit=crop',
-    alt: 'Wildlife in natural habitat by Sahitti Tirunagari - professional wildlife photography',
+    alt: 'Wildlife in natural habitat by Sahit Tirunagari - professional wildlife photography',
     title: 'Wildlife Moment',
   },
   {
     src: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1600&auto=format&fit=crop',
-    alt: 'Ocean waves at sunrise by Sahitti Tirunagari - seascape photography',
+    alt: 'Ocean waves at sunrise by Sahit Tirunagari - seascape photography',
     title: 'Ocean Vista',
   },
   {
     src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1600&auto=format&fit=crop',
-    alt: 'Desert dunes landscape by Sahitti Tirunagari - travel and nature photography',
+    alt: 'Desert dunes landscape by Sahit Tirunagari - travel and nature photography',
     title: 'Desert Dreams',
   },
 ];

@@ -35,7 +35,7 @@ export default function HomePage() {
                 <div className="relative" style={{ height: '100%', minHeight: '320px' }}>
                   <img
                     src="/assets/sahit.jpg"
-                    alt="Sahitti Tirunagari - Professional photographer specializing in wildlife and travel photography"
+                    alt="Sahit Tirunagari - Professional photographer specializing in wildlife and travel photography"
                     className="w-full h-full object-cover block"
                   />
                 </div>
@@ -46,7 +46,7 @@ export default function HomePage() {
             <div style={{ flex: '1 0 50%' }}>
               <h2 className="text-2xl font-semibold mb-4 font-handwritten">About Me</h2>
               <p className="text-gray-400 leading-relaxed mb-4 text-sm">
-                I'm Sahitti, a traveler at heart and a wildlife photographer by passion. Nature has always been my escape—a place where time slows down, light feels different, and every moment carries a story waiting to be captured.
+                I'm Sahit, a traveler at heart and a wildlife photographer by passion. Nature has always been my escape—a place where time slows down, light feels different, and every moment carries a story waiting to be captured.
               </p>
               <p className="text-gray-400 leading-relaxed mb-6 text-sm">
                 From early morning bird calls to chance encounters on unfamiliar trails, my camera helps me collect the little miracles I find along the way. These images are not just photographs; they're pieces of my journey and reminders of why I keep exploring.

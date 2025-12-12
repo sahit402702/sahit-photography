@@ -4,7 +4,7 @@ export function structuredData() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Sahitti Tirunagari',
+    name: 'Sahit Tirunagari',
     url: 'https://sahittirunagari.com',
     sameAs: [
       'https://twitter.com/sahittiPhoto',

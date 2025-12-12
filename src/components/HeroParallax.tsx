@@ -25,7 +25,7 @@ export default function HeroParallax() {
     <section
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-[80px]"
       style={{
-        backgroundImage: 'url(/assets/images/manglajodi_evening.jpg)',
+        backgroundImage: 'url(/assets/manglajodi_evening.jpg)',
         backgroundAttachment: 'fixed',
         backgroundPosition: `center ${scrollY * 0.5}px`,
         backgroundSize: 'cover',
@@ -39,7 +39,7 @@ export default function HeroParallax() {
       <div className="absolute inset-0 -z-20">
         <Image
           src="/assets/manglajodi_evening.jpg"
-          alt="Stunning wildlife and landscape photography by Sahitti Tirunagari - professional travel photographer"
+          alt="Stunning wildlife and landscape photography by Sahit Tirunagari - professional travel photographer"
           fill
           className="object-cover"
           priority
@@ -53,7 +53,7 @@ export default function HeroParallax() {
           className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight font-handwritten"
           style={{ opacity: 1 - scrollY / 500 }}
         >
-          Sahitti Tirunagari
+          Sahit Tirunagari
         </h1>
         <p className="text-lg md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">
           Professional Travel & Wildlife Photography | Capturing Nature's Untamed Beauty
