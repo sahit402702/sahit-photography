@@ -116,7 +116,7 @@ export default function GalleryGridClient({ initialImages }: GalleryGridClientPr
               tabIndex={0}
               aria-label={`Open image ${i + 1} in lightbox`}
             >
-              <div className={`relative w-full ${portrait ? 'h-[340px] md:h-[380px]' : 'h-[220px] md:h-[260px]'}`}>
+              <div className={`relative w-full ${portrait ? 'h-[340px] md:h-[380px]' : 'h-[160px] md:h-[200px]'}`}>
                 <Image
                   src={src}
                   alt={`Professional photography by Sahit Tirunagari - Gallery image ${i + 1} featuring travel and wildlife photography`}
