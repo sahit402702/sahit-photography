@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import Button from './Button';
 
 export default function HeroParallax() {
   const [scrollY, setScrollY] = useState(0);
@@ -49,7 +50,7 @@ export default function HeroParallax() {
       {/* Content */}
       <div className="relative z-20 text-center max-w-4xl px-6 md:px-12">
         <h1
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight font-handwritten"
           style={{ opacity: 1 - scrollY / 500 }}
         >
           Sahit Tirunagari
@@ -59,12 +60,9 @@ export default function HeroParallax() {
         </p>
 
         {/* Call-to-Action Button */}
-        <button
-          onClick={scrollToPortfolio}
-          className="inline-block px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg"
-        >
+        <Button onClick={scrollToPortfolio} variant="primary">
           View Portfolio
-        </button>
+        </Button>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
