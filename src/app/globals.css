@@ -194,6 +194,11 @@ html {
   grid-column: span 2;
 }
 
+.gallery-landscape {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
 @media (min-width: 768px) {
   .gallery-item--portrait {
     grid-column: span 1;
