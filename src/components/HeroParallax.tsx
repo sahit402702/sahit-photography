@@ -38,7 +38,7 @@ export default function HeroParallax() {
       {/* Animated background image fallback */}
       <div className="absolute inset-0 -z-20">
         <Image
-          src="/assets/images/manglajodi_evening.jpg"
+          src="/assets/manglajodi_evening.jpg"
           alt="Stunning wildlife and landscape photography by Sahitti Tirunagari - professional travel photographer"
           fill
           className="object-cover"
